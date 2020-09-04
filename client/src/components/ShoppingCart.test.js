@@ -49,7 +49,7 @@ const plants = [
 
 
   test("displays plants in cart", () => {
-    const { getByText } = render(<ShoppingCart cart={plants} />) 
+    render(<ShoppingCart cart={plants} />) 
   
     const plant1 = screen.getByText(/peperomia rosso/i)
     expect(plant1).toBeTruthy()
