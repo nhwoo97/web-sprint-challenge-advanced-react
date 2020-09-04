@@ -29,14 +29,29 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+Using custom hooks, you can invoke the stateful class component. The useState will allow the component to carry the "logic" behind the app and you can use localStorage to transfer data between the components.
 
 2. Describe the different phases of the component lifecycle.
 
+- Mounting(Birth) 
+- Updating(Growth) 
+- Un-mouting(Death) 
+
 3. Demonstrate an understanding of class component lifecycle methods.
+
+ A chain of events that happen from the birth of a react component to its death -  go through the circle of birth -> growth -> death 
+
 
 4. Define stateful logic.
 
+- Using custom hooks, you create 'components' that carry the logic behind everything, which means the state.
+
 5. Describe how to test a React component with React Testing Library.
+
+- we have to test what you expect the app to do, in order to find unexpected behavior that may lead to fixing bugs 
+--Arrange : set up our component to be tested & initialize getByText that we will run later : const { getByText } = render(<APP />)
+--Act     : we will use what the getByText to pull the element wa want to text and store it into a variable for use later : const something = getByText(/content/i)
+--Assert  : now we wil assert that the element is being rendered properly : expect(something0.toBeInTheDocument())
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
